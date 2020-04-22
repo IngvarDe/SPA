@@ -1,0 +1,11 @@
+<ng-container *ngIf="(moviePost$ | async) as moviePost; else loading">
+
+  <h1>{{ moviePost.title }}</h1>
+  <ul>
+    <li>Year: {{ moviePost.year }}</li>
+    <li>Ratin: {{ moviePost.rating }}</li>
+    <li>Description: {{ moviePost.description }}</li>
+  </ul>
+
+</ng-container>
+<ng-template #loading>Loading movie post...</ng-template>
