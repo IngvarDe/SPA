@@ -11,7 +11,6 @@ import { MoviePostComponent } from './movie-post/movie-post.component';
 import { MoviePostsComponent } from './movie-posts/movie-posts.component';
 import { MoviePostService } from '../services/movie-post.service';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { MovieFilterPipe } from '../movie-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { MovieFilterPipe } from '../movie-filter.pipe';
     MoviePostComponent,
     //MoviePostAddEditComponent,
     MoviePostsComponent,
-    MovieFilterPipe
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
